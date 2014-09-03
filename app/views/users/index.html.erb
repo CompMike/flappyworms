@@ -1,33 +1,19 @@
-<h1>Listing users</h1>
+<div class="container">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-
-        <td><%= link_to 'Show', user %></td>
+<h1>All Emails!</h1>
+        
         <div>
         <ul>
-        <% @email.each do |email| %>
+        <% @emails.each do |email| %>
 
-<%= email.email %>
+        <div class="row">
+        <li><%= email.email %></li>
+        </div>
 
-<% end %>
-
+        <% end %>
+        </ul>
       </tr>
-    <% end %>
-  </tbody>
-</table>
 
+</div>
+</div>
 

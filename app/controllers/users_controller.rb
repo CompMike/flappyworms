@@ -1,18 +1,17 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /users
   # GET /users.json
   def index
     @users = User.all
-    @email = Email.where.not(email: nil).all
+    @emails = Email.where.not(email: nil).all
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
 
-    @email = Email.where.not(email: nil).all
+    @emails = Email.where.not(email: nil).all
   end
 
   # GET /users/new
