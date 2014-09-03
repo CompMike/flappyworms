@@ -27,6 +27,7 @@ body {
 	font-size: 2em;
 	font-family: 'Lato', sans-serif;
 	height: 100%;
+	background-color: lighten(#5893FF, 20%);
 }
 .container {
 	width: 900px;
@@ -67,8 +68,20 @@ h1,h2,h3,h4 {
 .middle-content {
 	background: white;
 	border-radius: 6px;
+	padding: 2em;
+	margin-top: 2em;
 }
 footer {
 	background-color: #614126;
 	padding: 2em;
+	color: #A89A67;
+	a:link,a:visited,a:active {
+		color: #A89A67;
+	}
+	a:hover {
+		color: darken(#A89A67, 10%);
+	}
+	li {
+		list-style-type: none;
+	}
 }
