@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+  resources :users
+
   resources :emails
+
+  resources :sessions, only: [:new, :create, :destroy]
 
   root 'emails#new'
 
