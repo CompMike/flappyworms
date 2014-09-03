@@ -5,10 +5,22 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <style>
+
+  </style>
 </head>
 <body>
-
-<%= yield %>
-
+<header>
+<div class="container">
+	<div style="margin: 0 auto;">
+	<h1 style="font-size: 4em;">Flappy Worms!</h1>
+	</header>
+	<%= yield %>
+	</div>
+</div>
+<footer>
+	<a href="/users">Admin Page</a>
+</footer>
+<img src="assets/green-grass-clipart.jpg" alt="">
 </body>
 </html>
