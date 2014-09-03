@@ -10,12 +10,12 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+<div class="signup_form">
+  <div class="field input">
+    <%= f.text_field :email ,:class => 'email_input', :placeholder => "Enter your Email!"%>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions submit">
+    <%= f.submit 'Sign Up!', :class => 'btn btn-primary btn-lg btn-block'%>
   </div>
+</div>
 <% end %>

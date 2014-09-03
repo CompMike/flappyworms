@@ -10,17 +10,19 @@
   </style>
 </head>
 <body>
-<header>
-<div class="container">
-	<div style="margin: 0 auto;">
-	<h1 style="font-size: 4em;">Flappy Worms!</h1>
-	</header>
+
+<div class="main-content">
+<header class="container">
+	<%= image_tag('logo.png', class: "logo") %>
+</header>
 	<%= yield %>
+	<footer>
+	<div class="container">
+
+		<a href="/users">Admin Page</a>
 	</div>
+	</footer>
+
 </div>
-<footer>
-	<a href="/users">Admin Page</a>
-</footer>
-<img src="assets/green-grass-clipart.jpg" alt="">
 </body>
 </html>

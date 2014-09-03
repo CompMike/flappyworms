@@ -13,3 +13,62 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+.logo {
+
+	color: #A89A67;
+}
+html {
+	height: 100%;
+}
+body {
+	font-size: 2em;
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+}
+.container {
+	width: 900px;
+}
+.main-content {
+	height: 100%;
+	background-color: lighten(#5893FF, 20%);
+	background-image: url(grass.png);
+	background-repeat: repeat-x;
+	background-size: 400px 300px;
+	background-position: left bottom;
+}
+.logo {
+	width: 800px;
+	margin: 2em;
+}
+h1,h2,h3,h4 {
+	font-family: 'Pacifico', cursive;
+}
+.top-content {
+	.wormphone {
+		width:250px;
+		height: auto;
+		margin: 0 2em;
+	}
+}
+
+.signup_form {
+	.email_input {
+		width: 100%;
+		padding: 10px 16px;
+		margin-bottom: 6px;
+		font-size: 18px;
+		border-radius: 6px;
+		border: 1px solid #ccc;
+	}
+}
+.middle-content {
+	background: white;
+	border-radius: 6px;
+}
+footer {
+	background-color: #614126;
+	padding: 2em;
+}
