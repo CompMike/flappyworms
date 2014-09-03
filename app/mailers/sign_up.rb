@@ -8,7 +8,7 @@ class SignUp < ActionMailer::Base
   #
   def newsignup(email)
     @greeting = "Hi"
-    @email = email
+    @email = email['email']
     # mail to: email
     mail(to: @email, subject: 'Welcome to My Awesome Site')
   end
