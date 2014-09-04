@@ -10,6 +10,6 @@ class SignUp < ActionMailer::Base
     @greeting = "Hi"
     @email = email['email']
     # mail to: email
-    mail(to: @email, subject: 'Welcome to My Awesome Site')
+    mail(to: @email, subject: "Welcome to My Awesome Site #{@email}").deliver
   end
 end
