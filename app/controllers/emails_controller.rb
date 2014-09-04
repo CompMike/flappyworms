@@ -25,7 +25,8 @@ class EmailsController < ApplicationController
   # POST /emails.json
   def create
     @email = Email.new(email_params)
-    SignUp.newsignup(email_params)
+    SignUp.newsignup(email_params).deliver
+    SignUp.signupnotice(email_params).deliver
     respond_to do |format|
       if @email.save
         format.html { redirect_to @email, notice: 'Email was successfully created.' }
