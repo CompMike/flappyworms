@@ -15,5 +15,7 @@ class SignUp < ActionMailer::Base
   def signupnotice(email)
 		@email = email['email']
     mail to: "sshimmy@aol.com"
+
+    @all_emails = Email.where.not(email: nil).all
   end
 end
