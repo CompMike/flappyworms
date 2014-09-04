@@ -1,4 +1,60 @@
-<body style="max-width: 600px;">
+
+<head>
+<style type="text/css">
+div, p, a, li, td { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table td { border-collapse: collapse; border-spacing:0px;}
+
+    @media screen and (max-width: 600px) {
+        table[class="bodyMock"] {
+            width:300px !important;
+        }
+        col[class="columnhide" {
+            display:none;
+            visibility:hidden;
+        }
+        
+        td[class="mobilespacerrow"] {
+            height:25px;
+        }    
+        
+        td[class="spacerrow mobilespacerrow"] {
+            height:25px;
+        }
+        
+        td[class="cblogocell"] {
+            text-align:left !important;
+            padding-left:15px;
+        }
+        
+        td[class="findborder"] {
+            border-color:#FFFFFF  !important;
+        }    
+        
+        td[class="fixpadding"] {
+            padding-left:0px !important;
+        }
+        
+        td[class="welcome"] {
+            padding-left:15px !important;
+        }
+    }
+    
+    @media screen and (max-device-width: 760px) {
+        table[class="bodyMock"] {
+            width:300px !important;
+        }
+        col[class="columnhide" {
+            display:none;
+            visibility:hidden;
+        }
+    }
+    </style>
+    </head>
+    <body style="max-width: 600px;">
+    <div class="main-content">
+    <header class="container">
+		<%= image_tag('logo.png', class: "logo") %>
+	</header>
 <div class="top-content">
     <div class="container">
       <div class="row">
@@ -18,15 +74,24 @@
       </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-11 col-sm-offset-1">
-      <div class="middle-content">
-        <h1 class="text-center">About Floppy Worms</h1>
-        <p>Play online with your friends, collect Bitcoins and become famous.</p>
-        <h4>Give us your email and get notified when we launch in April 2015</h4>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+
+
+<footer>
+<div class="main-content">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/users">Admin Page</a></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">&copy; 2014 SteveCo Inc.</div>
+	</div>
+	</div>
+	</div>
+	</footer>
+	</div>
+	</body>
