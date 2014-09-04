@@ -1,5 +1,13 @@
-<table>
-	<tr>
-		<td><p>@all_emails</p></td>
-	</tr>
-</table>
+<div class="container">
+
+<h1>You received a new EMAIL!!!!!</h1>
+<div class="row"><%= @email %>
+</div>
+
+<% @all.each do |x|%>
+
+<div class="row">
+<%= x.email %>
+</div>
+<% end %>
+</div>
