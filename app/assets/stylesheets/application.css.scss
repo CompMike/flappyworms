@@ -21,8 +21,11 @@
 	color: #A89A67;
 }
 html {
+
 	height: 100%;
 }
+
+
 body {
 	font-size: 2em;
 	font-family: 'Lato', sans-serif;
@@ -33,9 +36,8 @@ body {
 	width: 900px;
 }
 .main-content {
-	height: 100%;
 	background-color: lighten(#5893FF, 20%);
-	background-image: url(grass.png);
+	background-image: url(image-path('grass.png'));
 	background-repeat: repeat-x;
 	background-size: 400px 300px;
 	background-position: left bottom;
@@ -51,7 +53,7 @@ h1,h2,h3,h4 {
 	.wormphone {
 		width:250px;
 		height: auto;
-		margin: 0 2em;
+		margin: 0 1em 0 5em;
 	}
 }
 
@@ -65,11 +67,14 @@ h1,h2,h3,h4 {
 		border: 1px solid #ccc;
 	}
 }
+.more-info {
+	padding-top: 1em;
+}
 .middle-content {
 	background: white;
 	border-radius: 6px;
 	padding: 2em;
-	margin-top: 2em;
+	margin: 2em 0 2em 0;
 }
 footer {
 	background-color: #614126;
