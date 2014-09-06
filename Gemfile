@@ -7,13 +7,14 @@ gem 'rails', '4.1.4'
 group :development do
     gem 'sqlite3'
     gem "letter_opener"
-    # gem 'launchy', '~> 2.4.2' 
-	
+    gem 'launchy', '~> 2.4.2'
+
 end
 
-group :production do 
+group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+  gem 'mandrill-api'
 end
 
 # Use SCSS for stylesheets
@@ -51,4 +52,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
