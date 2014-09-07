@@ -12,14 +12,14 @@ Rails.application.configure do
 
   #setup smtp on production
   config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  address: "smtp.mandrillapp.com",
-  port: 587,
-  authentication: "plain",
-  user_name: "compmike@gmail.com",
-  password: ENV['SMTP_PASSWORD'],
-  enable_starttls_auto: false
-}
+  config.action_mailer.smtp_settings = {
+    address: "smtp.mandrillapp.com",
+    port: 587,
+    authentication: "plain",
+    user_name: "compmike@gmail.com",
+    password: ENV['SMTP_PASSWORD'],
+    enable_starttls_auto: false
+  }
 config.action_mailer.raise_delivery_errors = true
 
   # Full error reports are disabled and caching is turned on.
