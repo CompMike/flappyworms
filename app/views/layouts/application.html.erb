@@ -13,22 +13,26 @@
 
 <div class="main-content">
 	<header class="container">
-		<%= image_tag('logo.png', class: "logo") %>
+    <div class="row">
+      <div class="col-sm-12">
+		    <%= image_tag('logo.png', class: "logo img-responsive") %>
+      </div>
+    </div>
 	</header>
 	<%= yield %>
 </div>
 <footer>
 	<div class="container">
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-sm-4">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="/users">Admin Page</a></li>
+				<li><a href="#">Admin Page</a></li>
 				<li></li>
 			</ul>
 		</div>
-		<div class="col-md-4"></div>
-		<div class="col-md-4">&copy; 2014 SteveCo Inc.</div>
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">&copy; 2014 SteveCo Inc.</div>
 	</div>
 
 	</div>

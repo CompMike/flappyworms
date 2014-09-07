@@ -11,6 +11,9 @@
  * file per style scope.
  *
  */
+
+$grid-float-breakpoint: 768px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
@@ -24,16 +27,11 @@ html {
 
 	height: 100%;
 }
-
-
 body {
 	font-size: 2em;
 	font-family: 'Lato', sans-serif;
 	height: 100%;
 	background-color: lighten(#5893FF, 20%);
-}
-.container {
-	width: 900px;
 }
 .main-content {
 	background-color: lighten(#5893FF, 20%);
@@ -43,17 +41,18 @@ body {
 	background-position: left bottom;
 }
 .logo {
-	width: 800px;
-	margin: 2em;
+	padding: 2em;
 }
 h1,h2,h3,h4 {
 	font-family: 'Pacifico', cursive;
 }
 .top-content {
 	.wormphone {
-		width:250px;
+		max-width:250px;
 		height: auto;
-		margin: 0 1em 0 5em;
+		margin-left: auto;
+		margin-right: auto;
+
 	}
 }
 
