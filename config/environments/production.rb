@@ -16,7 +16,7 @@ Rails.application.configure do
     address: "smtp.mandrillapp.com",
     port: 587,
     authentication: "plain",
-    user_name: "compmike@gmail.com",
+    user_name: ENV['SMTP_USERNAME'],
     password: ENV['SMTP_PASSWORD'],
     enable_starttls_auto: false
   }
