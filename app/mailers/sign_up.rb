@@ -9,8 +9,7 @@ class SignUp < ActionMailer::Base
   def newsignup(email)
     @greeting = "Hi"
     @email = email['email']
-    mail to: @email
-    mail(to: "sshimmy@aol.com", subject: "You've signed up")
+    mail(to: @email, subject: "You've signed up")
   end
   def signupnotice(email)
     @all = Email.where.not(email: nil).all
